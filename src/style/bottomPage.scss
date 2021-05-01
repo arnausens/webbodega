@@ -1,0 +1,27 @@
+.bottom-component-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-component {
+    width: 90vw;
+    height: 250px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #cea123;
+
+    &__logo {
+        margin-top: 40px;
+    }
+
+    .end-page {
+        width: 80vw;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px;
+    }
+}

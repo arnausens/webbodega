@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import {gsap} from 'gsap';
 
 var tl = gsap.timeline();
 
-class HomePage extends Component {
-    topEndAnimationsIn() {
+const HomePage = () => {
+    const topEndAnimationsIn = () => {
         tl
         .from("#container-home__top", {duration:1 ,opacity:0})
-        .from("#content-home__top", {xPercent:-100, ease:"expo", opacity:0, duration:2})
+        .from("#content-home__top", {xPercent:-100, ease:"expo", scale: 0, opacity:0, duration:2})
         .from("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:3}, "<")
     }
-    topEndAnimationsOut() {
+    const topEndAnimationsOut = () => {
         tl
         .to("#container-home__top", {duration:1 ,opacity:0})
         .to("#content-home__top", {xPercent:-100, ease:"back", opacity:0, duration:2})
         .to("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:3}, "<")
     }
-    componentDidMount() {
-        this.topEndAnimationsIn();
-    } 
-    componentWillUnmount(){
-        this.topEndAnimationsOut();
-    }
-
-  render() {
-    
+    useEffect (() => {
+        topEndAnimationsIn();
+        return () => topEndAnimationsOut();
+    }) 
     return (
         <div className='home-page-container'>
             <div className='home-page'>
@@ -70,7 +65,6 @@ class HomePage extends Component {
             </div>
         </div>    
     );
-  }
 }
 
 export default HomePage;

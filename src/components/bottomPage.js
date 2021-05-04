@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BottomPage extends Component {
-  render() {
+const BottomPage = () => {
     return (
         <div className='bottom-component-container'>
             <div className='bottom-component'>
@@ -14,7 +13,6 @@ class BottomPage extends Component {
             </div>
         </div>  
     );
-  }
 }
 
 export default BottomPage;

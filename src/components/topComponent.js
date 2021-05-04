@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NavBar extends Component {
-  render() {
+const TopComponent = () => {
     return (
         <div className='top-component-container'>
             <div className='top-component'>
@@ -17,7 +16,6 @@ class NavBar extends Component {
             </div>
         </div>
     );
-  }
-}
+};
 
-export default NavBar;
+export default TopComponent;

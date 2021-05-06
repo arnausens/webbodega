@@ -7,19 +7,20 @@ const HomePage = () => {
     const topEndAnimationsIn = () => {
         tl
         .from("#container-home__top", {duration:1 ,opacity:0})
-        .from("#content-home__top", {xPercent:-100, ease:"expo", scale: 0, opacity:0, duration:2})
-        .from("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:3}, "<")
+        .from("#content-home__top", {xPercent:-100, ease:"expo", opacity:0, duration:1})
+        .from("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:2}, "<")
     }
-    const topEndAnimationsOut = () => {
-        tl
-        .to("#container-home__top", {duration:1 ,opacity:0})
-        .to("#content-home__top", {xPercent:-100, ease:"back", opacity:0, duration:2})
-        .to("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:3}, "<")
-    }
+    // const topEndAnimationsOut = () => {
+    //     tl
+    //     .to("#container-home__top", {duration:1 ,opacity:0})
+    //     .to("#content-home__top", {xPercent:-100, ease:"back", opacity:0, duration:2})
+    //     .to("#imagen-home__top", {xPercent:100, ease:"back", opacity:0, duration:3}, "<")
+    // }
     useEffect (() => {
-        topEndAnimationsIn();
-        return () => topEndAnimationsOut();
-    }) 
+        topEndAnimationsIn()
+    }, []);
+    //     return () => topEndAnimationsOut();
+    // }) 
     return (
         <div className='home-page-container'>
             <div className='home-page'>

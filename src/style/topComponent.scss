@@ -55,3 +55,8 @@
         }   
     } 
 }
+@media (max-width: 450px) {
+    .top-component__logo-img {
+        width: 100vw;
+    }
+}

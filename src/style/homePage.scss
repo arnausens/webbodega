@@ -11,7 +11,7 @@
         flex-direction: column;
         width: 75vw;
         margin-bottom: 80px;
-
+       
         &__top, &__mid, &__bottom {
             height: 650px;
             padding: 30px;
@@ -21,6 +21,7 @@
             align-items: center;
             border-bottom: 3px solid #cea123;
             border-spacing: 20px;
+            opacity: 0;
         }
 
         &__content {

@@ -1,0 +1,90 @@
+.bodega-page {
+    &__container {
+        margin-bottom: 70px;
+        margin: 100px;
+    }
+    &__title-controlers {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        h3 {
+           color: black;
+           font-size: 40px; 
+        }
+        .controlers button {
+            background: black;
+            height: 6px;
+            width: 15px;
+            border: none;
+            margin-right: 2px;
+            outline: none;
+            right: 20px;
+            &:hover {
+                background: grey;
+            }
+            &.active {
+                background: #cea123;
+            }
+        }
+    }
+    &__principal-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .left-arrow, .right-arrow {
+            position: absolute;
+            border: none;
+            background: rgba(0,0,0,0.3);
+            font-size: 40px;
+            height: 66.5%;
+            top: calc(50% -25%);
+            line-height: 40px;
+            width: 35px;
+            color: #cea123;
+            z-index: 500;
+            transition: .2s ease all;
+            outline: none;
+
+            &:hover {
+                background: rgba(0,0,0,0.8);
+            }
+        }
+        .left-arrow {
+            left: 0;
+        }
+        .right-arrow {
+            right: 0;
+        }
+    }
+    &__carousel-container {
+        width: 100%;
+        padding: 100px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    &__carousel-image {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+    &__image {
+        min-width: 20%;
+        transition: .3s ease-in-out all;
+        object-fit: cover;
+        
+        &:hover {
+            transform: scale(1.6);
+            transform-origin: center;
+        }
+        @media (max-width: 1200px) {
+            min-width: 25%;
+        }
+        @media (max-width: 800px) {
+            min-width: 50%;
+        }
+        @media (max-width: 500px) {
+            min-width: 100%;
+        }
+    }
+}

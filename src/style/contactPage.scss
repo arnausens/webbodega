@@ -1,0 +1,41 @@
+.contact-page {
+    &__container {
+        display: flex;
+        padding: 50px;
+        gap: 50px;
+        justify-content: center;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+
+    &__map {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        // justify-items: center;
+        // align-content: center;
+        
+        iframe {
+            @media (max-width: 800px) {
+                width: 100vw !important;
+            }
+        }
+        
+    }
+
+    &__form form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__form label {
+        font-size: 0.8em;
+    }
+    &__button {
+        background-color: #cea123;
+        border: none;
+        border-radius: 3px;
+        color:white
+    }
+}

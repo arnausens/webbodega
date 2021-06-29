@@ -17,6 +17,12 @@ $animationSpeed: 35s;
     margin-top: 40px;
     overflow: hidden;
 
+    h3 {
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        font-size: 2.2em;
+    }
+
     .product-page {
         display: flex;
         justify-content: center;
@@ -35,6 +41,11 @@ $animationSpeed: 35s;
         &__content {
             width: 40vw;
             margin: 40px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.2rem;
+            @media (max-width: 500px) {
+                width: 75vw;
+            }
 
             h3 {
                 text-align: center;
@@ -59,7 +70,7 @@ $animationSpeed: 35s;
 		        content: "";
 		        height: 400px;
 		        position: absolute;
-		        width: 200px;
+		        width: 100px;
 		        z-index: 2;
                 @media (max-width: 1000px) {
                     width: 100px;
@@ -86,6 +97,7 @@ $animationSpeed: 35s;
                 .product-image {
                     height: 400px;
 		            width: 300px;
+                    object-fit: cover;
                 }
             }
         }

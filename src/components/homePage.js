@@ -71,14 +71,14 @@ const HomePage = () => {
                         </p>
                     </div>
                     <div className='home-page__images' id='imagen-home__top'>
-                        <img className='image-top__one' src='http://via.placeholder.com/300x500' id='imagen-home__top1'/>
-                        <img className='image-top__two' src='http://via.placeholder.com/300x500' id='imagen-home__top1'/>
+                        <img className='image-top__one' src='https://images.unsplash.com/photo-1520279406162-c955e67194ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80' id='imagen-home__top1'/>
+                        <img className='image-top__two' src='https://images.unsplash.com/photo-1516154767575-2146adebdf32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80' id='imagen-home__top1'/>
                     </div>
                 </div>
                 <div ref={ref1} className='home-page__mid' id='container-home__mid'>
                     <div className='home-page__images' id='imagen-home__mid'>
-                        <img className='image-top__one' src='http://via.placeholder.com/300x500'/>
-                        <img className='image-top__two' src='http://via.placeholder.com/300x500'/>
+                        <img className='image-top__one' src='https://images.unsplash.com/photo-1560148218-1a83060f7b32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'/>
+                        <img className='image-top__two' src='https://images.unsplash.com/photo-1557682204-e53b55fd750c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=623&q=80'/>
                     </div>
                     <div className='home-page__content' id="content-home__mid">
                         <h3>Productos</h3>
@@ -97,8 +97,8 @@ const HomePage = () => {
                         </p>
                     </div>
                     <div className='home-page__images' id='imagen-home__bottom'>
-                        <img className='image-top__one' src='http://via.placeholder.com/300x500'/>
-                        <img className='image-top__two' src='http://via.placeholder.com/300x500'/>
+                        <img className='image-top__one' src='https://images.unsplash.com/photo-1565599837634-889309b9f5d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80'/>
+                        <img className='image-top__two' src='https://images.unsplash.com/photo-1560174122-cbbf1db52c82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80'/>
                     </div>
                 </div>
             </div>

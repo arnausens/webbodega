@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import TopComponent from "./TopComponent";
+import TopComponent from "./topComponent";
 import BottomPage from './bottomPage';
 import HomePage from './homePage';
 import ProductsPage from './productPage';
